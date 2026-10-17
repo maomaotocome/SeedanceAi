@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "publisher": "SeedanceAI.dev",
+  "website": "https://seedanceai.dev",
+  "examples": [
+    {
+      "id": "espresso-cup",
+      "page": "examples/espresso-cup.md",
+      "sourcePage": "https://seedanceai.dev/",
+      "recordedDate": "2026-10-03",
+      "model": "Seedance 2.5",
+      "scene": "text-to-video",
+      "prompt": "Locked macro of an unbranded matte-black espresso cup on pale stone. Steam rises and curls left. Slow push-in that stops at the rim. Soft window light, quiet room tone, no text.",
+      "requested": {
+        "resolution": "480p",
+        "durationSeconds": 5,
+        "aspectRatio": "16:9",
+        "generateAudio": true
+      },
+      "observed": {
+        "width": 854,
+        "height": 480,
+        "containerDurationSeconds": 5.056,
+        "videoTrackPresent": true,
+        "audioTrackPresent": true,
+        "editedForThisRepository": false
+      },
+      "output": {
+        "path": "assets/espresso-cup/output.mp4",
+        "bytes": 2198791,
+        "sha256": "72d3da43f0c79c21effac534fdaf6ddd72d84bf49facc3cddbfee55240f451a8"
+      },
+      "poster": {
+        "path": "assets/espresso-cup/poster.webp",
+        "bytes": 12596,
+        "sha256": "9edfca6dc6799820eceb4bd1e504f261f3f4ca627cf4b436095e8d67a2d1b607"
+      },
+      "limitations": [
+        "A single retained site sample is not a model accuracy benchmark.",
+        "Audio presence does not establish audio quality.",
+        "Repeat generations can differ."
+      ]
+    },
+    {
+      "id": "zombie-reunion",
+      "page": "examples/zombie-reunion.md",
+      "sourcePage": "https://seedanceai.dev/zombie-love-story-ai#case-study",
+      "recordedDate": "2026-10-15",
+      "model": "Seedance 2.5",
+      "scene": "reference-to-video",
+      "prompt": "Create a 10-second fictional cinematic reunion, vertical 9:16. Use exactly two separate shots with one immediate editorial cut between them. Image 1 defines the adult woman survivor in the rust-red jacket, always screen left. Image 2 defines her adult male partner in the olive-green shirt, always screen right. Preserve both distinct faces, hair, clothing and natural anatomy. Both have empty hands throughout.\n[0-5s] SHOT 1: A locked, chest-height medium two-shot in an abandoned kitchen with cool blue window light. Both people are seen from a front three-quarter angle. The male partner has subtle pale theatrical zombie makeup with intact skin. They recognize each other, take one small step together, and gently embrace. Keep each face visible beside the other's shoulder, looking slightly toward the camera. Hold the embrace by the end of this shot.\n[5-10s] SHOT 2: Make an immediate hard cut to a DIFFERENT LOCATION: a sunlit golden field before the outbreak. Begin already in the same gentle embrace with the same left/right positions, clothing, camera height and framing. Both are healthy, with normal skin. Keep BOTH faces visible at three-quarter angles, no back-facing head. Hold the warm memory to the end.\nThe transition is an abrupt film edit between two distinct backgrounds, NOT a gradual transformation. No dissolve, crossfade, morphing scenery, transparent walls, double exposure or overlapping locations. No weapons, props, injuries, attacks, extra people, text, dialogue or music. Only quiet natural ambience.",
+      "requested": {
+        "resolution": "480p",
+        "durationSeconds": 10,
+        "aspectRatio": "9:16",
+        "generateAudio": true
+      },
+      "references": [
+        {
+          "path": "assets/zombie-reunion/reference-1.png",
+          "bytes": 1941998,
+          "sha256": "a88e9cc026afd8a87dbac04e6d33ecd237ea029b506de11df881b162b2d76a51",
+          "order": 1,
+          "role": "Adult woman survivor, screen left",
+          "origin": "AI-generated fictional adult created for this case"
+        },
+        {
+          "path": "assets/zombie-reunion/reference-2.png",
+          "bytes": 2000999,
+          "sha256": "33fc90b986735ff9317b10f21f60e4a177346be7cf18c76d4f8abd856cad83dd",
+          "order": 2,
+          "role": "Adult male partner, screen right",
+          "origin": "AI-generated fictional adult created for this case"
+        }
+      ],
+      "observed": {
+        "width": 480,
+        "height": 854,
+        "containerDurationSeconds": 10.08,
+        "videoTrackPresent": true,
+        "audioTrackPresent": true,
+        "acceptedTake": 2,
+        "totalSubmissions": 2,
+        "editedForThisRepository": false
+      },
+      "output": {
+        "path": "assets/zombie-reunion/output.mp4",
+        "bytes": 4092224,
+        "sha256": "9e822e35f6d22a43ee246f8eddb71bbde52096520494f5a3a480b11f3f89e5a7"
+      },
+      "poster": {
+        "path": "assets/zombie-reunion/poster.jpg",
+        "bytes": 55531,
+        "sha256": "151baed2cab98a25916b38809ad11e2e68114e0a5b106245b7ac3fa54fd116eb"
+      },
+      "limitations": [
+        "The male character turns away after the cut; his facial continuity in the memory remains unverified.",
+        "Audio content was not independently scored.",
+        "This is an accepted example after a prompt revision, not a success-rate benchmark."
+      ]
+    }
+  ]
+}

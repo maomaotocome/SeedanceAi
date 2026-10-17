@@ -1,0 +1,29 @@
+# Public showcase allow-list. Application source belongs in the private repository.
+*
+!.gitignore
+!README.md
+!CONTRIBUTING.md
+!CONTENT-LICENSE.md
+!examples/
+!examples/**
+!assets/
+!assets/**
+
+# Never include credentials, private keys, local state, or production data.
+.env
+.env.*
+.dev.vars
+.dev.vars.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.db
+*.sqlite
+*.sqlite3
+*.log
+*.dump
+*.bak
+.DS_Store
+__pycache__/
+node_modules/
